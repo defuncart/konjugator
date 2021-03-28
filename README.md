@@ -8,28 +8,16 @@ The app is currently in development: once the app enters alpha, an open testing 
 
 If you would like to build the app yourself, then you simply need:
 
-- Flutter >= 1.17.0 (beta)
-- Dart >= 2.7
-- Xcode >= 11.3
-- Android SDK >= 29.0.3
+- Flutter >= 2.0.0 (beta)
+- Dart >= 2.12
+- Xcode >= 12.3
+- Android SDK >= 30.0.3
 
 To generate the app icons, run:
 
 ```sh
 flutter pub run flutter_launcher_icons:main
 ```
-
-## Git Flow
-
-This project adheres to the following Git Flow:
-
-**master** contains the latest dev build. This may be unstable and may contain bugs. Stable releases are tagged.
-
-**feature/XX** is a branch implementing a given feature.
-
-**release/x.y.z** is a release candidate. After this is approved, the branch is merged into *master* and a tag *x.y.z* is created.
-
-Once a branch is merged into *master*, it is automatically deleted.
 
 ## Contributing
 
