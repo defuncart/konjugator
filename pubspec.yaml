@@ -1,0 +1,54 @@
+name: konjugator
+description: A German verb conjugation app.
+publish_to: 'none'
+version: 0.0.1+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+  flutter: '>=3.16.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons:
+  app_store_screenshots:
+    git:
+      url: https://github.com/defuncart/app_store_screenshots
+      ref: 75e9c4225822de80a5d76ac71106bdfd54d604be
+  arb_generator:
+
+flutter:
+  uses-material-design: true
+  generate: true
+  fonts:
+    - family: Aleo
+      fonts:
+        - asset: assets/fonts/Aleo-Regular.otf
+        - asset: assets/fonts/Aleo-Italic.otf
+          style: italic
+        - asset: assets/fonts/Aleo-Bold.otf
+          weight: 700
+        - asset: assets/fonts/Aleo-Light.otf
+          weight: 100
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets_dev/app_icons/app_icon.png"
+  adaptive_icon_background: "#9BA8BA"
+  adaptive_icon_foreground: "assets_dev/app_icons/android_icon_foreground.png"
+
+arb_generator:
+  input_filepath: "assets_dev/loca/loca.csv"
+  output_directory: "assets_dev/l10n"
+  filename_prepend: "l10n_"
+  csv_settings:
+    delimiter: ";"
+    base_index: 1
